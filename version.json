@@ -1,5 +1,5 @@
 {
-  "version": "1.22.1",
-  "url": "https://github.com/ovo123380/suyin-quote-updates/releases/download/v1.22.1/SuyinQuote_Setup_v1.22.1.exe",
-  "notes": "修复编辑改名变新建、自定义标签可删除"
+  "version": "1.23.0",
+  "url": "https://github.com/ovo123380/suyin-quote-updates/releases/download/v1.23.0/SuyinQuote_Setup_v1.23.0.exe",
+  "notes": "### 计价规则修正（重要）\n\n发光字类计价改为按尺寸分档计算：\n\n- **单边不超 1 米**：按最长边 × 元/cm（和以前一样）\n- **双边都超 1 米**：改按平方计价，㎡ 单价 = 元/cm 单价 × 100\n\n**举例**（以单价 2.4 元/cm 为例）：\n\n| 尺寸 | 算法 | 金额 |\n|---|---|---|\n| 50×30cm | 最长边 50cm × 2.4 | 120 元 |\n| 150×30cm | 最长边 150cm × 2.4（宽没超1米，不变） | 360 元 |\n| 120×120cm | 1.44㎡ × 240 元/㎡ | 345.6 元 |\n| 200×200cm | 4.00㎡ × 240 元/㎡ | 960 元 |\n\n报价单里会标注用的是哪种算法，方便核对。"
 }
